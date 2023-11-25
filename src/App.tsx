@@ -1,9 +1,10 @@
-import Dashboard from './Components/Dashboard';
+import SignIn from './Components/SignIn';
 
 const App = () => {
   return (
     <div>
-      <Dashboard/>
+      {/* <Dashboard/> */}
+      <SignIn/>
     </div>
   )
 }
