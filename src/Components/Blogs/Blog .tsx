@@ -1,16 +1,13 @@
-import React from "react";
 import { Facebook, GitHub, Twitter } from "@mui/icons-material";
 import { Container, Grid } from "@mui/material";
-import post1 from "./Blogpost1.md";
-import post2 from "./Blogpost2.md";
-import post3 from "./Blogpost3.md";
+import React from "react";
+// import post1 from "./Blogpost1.md";
+// import post2 from "./Blogpost2.md";
+// import post3 from "./Blogpost3.md";
 import CardData, { CardDataPost } from "./CardData";
 import Header from "./Header";
-import MainCard from "./MainCard";
 import MainFeature, { PostType } from "./MainFeature";
 import Sidebar from "./Sidebar";
-
-
 
 const sectionItems = [
   { title: "Technology", url: "/technology" },
@@ -33,7 +30,7 @@ const mainCardData: PostType = {
   imageText: "main image description",
 };
 
-const cardData:CardDataPost[] = [
+const cardData: CardDataPost[] = [
   {
     title: "Featured Post",
     subheader: "Nov 12",
@@ -72,7 +69,7 @@ const sidebarContent = {
   ],
 };
 
-const posts = [post1, post2, post3];
+// const posts = [post1, post2, post3];
 
 const Blog = () => {
   return (
@@ -87,7 +84,7 @@ const Blog = () => {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <MainCard title="From the firehose" posts={posts} />
+            {/* <MainCard title="From the firehose" posts={posts} /> */}
             <Sidebar
               title={sidebarContent.title}
               description={sidebarContent.description}
